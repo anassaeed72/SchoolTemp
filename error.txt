@@ -1,37 +1,76 @@
- mongrel_rails start
-** Starting Mongrel listening at 0.0.0.0:3000
-** Starting Rails with development environment...
-/usr/local/rvm/gems/ruby-1.8.7-head/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
-/usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/rubygems_integration.rb:493:in `all_specs': undefined method `gems' for #<Rails::VendorGemSourceIndex:0x7f8b05ab98b0> (NoMethodError)
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/source/rubygems.rb:288:in `installed_specs'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/source/rubygems.rb:84:in `specs'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/lazy_specification.rb:56:in `__materialize__'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/spec_set.rb:91:in `materialize'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/spec_set.rb:88:in `map!'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/spec_set.rb:88:in `materialize'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/definition.rb:140:in `specs'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/definition.rb:185:in `specs_for'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler/runtime.rb:14:in `setup'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler.rb:97:in `setup'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/bundler-1.12.5/lib/bundler.rb:102:in `require'
-        from /home/ubuntu/workspace/config/boot.rb:112:in `load_gems'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/rails-2.3.5/lib/initializer.rb:164:in `process'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
-        from /home/ubuntu/workspace/config/environment.rb:6
-        from /usr/local/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-        from /usr/local/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:147:in `rails'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/mongrel_rails:113:in `cloaker_'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:149:in `call'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:149:in `listener'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/mongrel_rails:99:in `cloaker_'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:50:in `call'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:50:in `initialize'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/mongrel_rails:84:in `new'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/mongrel_rails:84:in `run'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/gems/mongrel-1.1.5/bin/mongrel_rails:281
-        from /usr/local/rvm/gems/ruby-1.8.7-head/bin/mongrel_rails:19:in `load'
-        from /usr/local/rvm/gems/ruby-1.8.7-head/bin/mongrel_rails:19
-        from /usr/local/rvm/gems/ruby-1.8.7-head/bin/ruby_executable_hooks:15
+ rails s -p $PORT -b $IP
+      create  
+      create  app/controllers
+      create  app/helpers
+      create  app/models
+      create  app/views/layouts
+      create  config/environments
+      create  config/initializers
+      create  config/locales
+      create  db
+      create  doc
+      create  lib
+      create  lib/tasks
+      create  log
+      create  public/images
+      create  public/javascripts
+      create  public/stylesheets
+      create  script/performance
+      create  test/fixtures
+      create  test/functional
+      create  test/integration
+      create  test/performance
+      create  test/unit
+      create  vendor
+      create  vendor/plugins
+      create  tmp/sessions
+      create  tmp/sockets
+      create  tmp/cache
+      create  tmp/pids
+      create  Rakefile
+      create  README
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  config/database.yml
+      create  config/routes.rb
+      create  config/locales/en.yml
+      create  db/seeds.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_rails_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/environment.rb
+      create  config/boot.rb
+      create  config/environments/production.rb
+      create  config/environments/development.rb
+      create  config/environments/test.rb
+      create  script/about
+      create  script/console
+      create  script/dbconsole
+      create  script/destroy
+      create  script/generate
+      create  script/runner
+      create  script/server
+      create  script/plugin
+      create  script/performance/benchmarker
+      create  script/performance/profiler
+      create  test/test_helper.rb
+      create  test/performance/browsing_test.rb
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/index.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  public/images/rails.png
+      create  public/javascripts/prototype.js
+      create  public/javascripts/effects.js
+      create  public/javascripts/dragdrop.js
+      create  public/javascripts/controls.js
+      create  public/javascripts/application.js
+      create  doc/README_FOR_APP
+      create  log/server.log
+      create  log/production.log
+      create  log/development.log
+      create  log/test.log
